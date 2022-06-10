@@ -694,6 +694,7 @@ hr {
   font-size: 0.75rem;
   line-height: 0.9375rem;
   color: #ffffff;
+  max-width: 281px;
 }
 
 @media (max-width: 700px) {
@@ -1329,4 +1330,8 @@ hr {
   color: #ffffff;
   padding: 1.25rem 4.0625rem;
   cursor: pointer;
+  transition: .3s;
+}
+.cart__submit:hover{
+  background: #EE743D;
 }
