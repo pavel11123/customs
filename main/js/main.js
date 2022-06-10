@@ -17,10 +17,12 @@ const popup = () => {
 
    const openPopup = () => {
       popupModal.style.display = 'flex'
+      document.getElementById("phone__menu-id-body").style.overflow = "hidden";
    }
 
    const closePopup = () => {
       popupModal.style.display = 'none'
+      document.getElementById("phone__menu-id-body").style.overflow = "visible";
    }
 
    popupBtn.addEventListener('click', openPopup)
