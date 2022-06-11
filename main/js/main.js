@@ -31,3 +31,27 @@ const popup = () => {
 }
 
 popup()
+
+function loadMore(){
+   var btn = document.getElementById("btn-hidden");
+   var spanH = document.getElementById("span-hidden");
+   var elem = document.querySelector(".services__grid-hidden");
+   
+   if(spanH.style.display === "none"){
+      btn.innerHTML = "Показать все услуги";
+      spanH.style.display="inline";
+      elem.style.display="none";
+
+   }else{
+      btn.innerHTML = "Показать меньше";
+      spanH.style.display="none";
+      elem.style.display="grid";
+   }
+}
+
+// const loadMore = () => {
+
+
+// }
+
+// loadMore()
