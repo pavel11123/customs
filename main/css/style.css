@@ -258,13 +258,25 @@ hr {
 .sub-header__adr {
   color: #000000;
   padding: 5px 10px;
-  display: inline-block;
+  display: inline-flex;
 }
 
 .address__list:hover .sub-header__address {
   visibility: visible;
   opacity: 1;
   transform: translate(-50%, 0);
+}
+
+.sub-header__adr::before {
+  content: " ";
+  background-image: url(../img/icon/location.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+  display: block;
+  margin-right: 2px;
+  flex: 0 0 auto;
 }
 
 /* list for address */
@@ -1537,3 +1549,7 @@ hr {
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
 } */
+
+.list__address {
+  max-width: 300px;
+}
