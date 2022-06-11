@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="main/css/style.css?v=1" />
+    <link rel="stylesheet" type="text/css" href="main/css/style.css?v=2" />
     <script src="main/js/main.js" defer></script>
     <title>Title</title>
   </head>
@@ -19,12 +19,57 @@
               <h3 class="header__title">
                 Ваш надёжный таможенный представитель на Урале
               </h3>
-              <p class="address header__address">
-                Екатеринбург, ул. Совхозная 20А, офис 5, 7
-              </p>
-              <a href="tel:+73432536582" class="phone header__phone"
-                >+7 (343) 253-65-82</a
-              >
+
+              <ul class="address__list">
+                <li>
+                  <a class="address header__address">Офисы в Екатеринбурге</a>
+                  <ul class="sub-header__address">
+                    <li>
+                      <a class="address header__address sub-header__adr"
+                        >Ул. Строителей 2А, оф. 27,29,201 (СВХ ООО «НСК-Терминал
+                        /Верх-Исетский таможенный пост)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="address header__address sub-header__adr"
+                        >Ул. Бахчиванджи, 2, оф. 209 (СВХ АО «СиАйТи терминал,
+                        Октябрьский таможенный пост)</a
+                      >
+                    </li>
+                    <li>
+                      <a class="address header__address sub-header__adr"
+                        >Ул. Энтузиастов, 15, офис 33</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- <p class="address header__address">Офисы в Екатеринбурге</p> -->
+
+              <ul class="phone__list">
+                <li>
+                  <a href="tel:+73432536582" class="phone header__phone"
+                    >+7 (343) 253-65-82</a
+                  >
+                  <ul class="sub-header__phone">
+                    <li>
+                      <a
+                        href="tel:+79041735677"
+                        class="phone header__phone sub-header__link"
+                        >+7-904-173-56-77</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="tel:+79126355504"
+                        class="phone header__phone sub-header__link"
+                        >+7-912-635-55-04</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -168,17 +213,15 @@
                 </div>
                 <div class="customs__block customs__about">
                   <div class="customs__img">
-                    <span>1234</span>
+                    <span>120</span>
                     <p class="customs__about-text">
-                      компании стали нашими клиентаии
-                    </p>
-                    <span>123</span>
-                    <p class="customs__about-text">
-                      специалиста по таможенному оформлению и логистике
+                      компаний стали нашими клиентаии
                     </p>
                     <span>3</span>
+                    <p class="customs__about-text">офиса в Екатеринбурге</p>
+                    <span>100%</span>
                     <p class="customs__about-text">
-                      представительства в России
+                      высокая квалификация всех специалистов
                     </p>
                     <!-- <img src="main/img/photo/about.svg" alt="about" /> -->
                   </div>
@@ -450,9 +493,9 @@
             <div class="footer__team">
               <div class="team__img">
                 <img src="main/img/icon/team.svg" alt="team kowalenko studio" />
-                <p class="team__text">
+                <a href="http://studio.kowalenko.net/" class="team__text">
                   Сайт разработан командой <span>❤ Kowalenko Studio</span>
-                </p>
+                </a>
               </div>
             </div>
           </div>
