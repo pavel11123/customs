@@ -1274,7 +1274,6 @@ hr {
   line-height: 1.25rem;
   text-align: center;
   color: #ffffff;
-  padding: 1.3125rem 3.75rem;
   background: #b7613b;
   border-radius: 8px;
   border: none;
@@ -1283,6 +1282,11 @@ hr {
   flex: 0 0 280px;
   margin: 0 auto;
   cursor: pointer;
+  padding-top: 1.3125rem;
+  padding-bottom: 1.3125rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+  -webkit-appearance: none;
 }
 
 .form__submit:hover {
@@ -1497,6 +1501,7 @@ hr {
   padding: 1.25rem 4.0625rem;
   cursor: pointer;
   transition: .3s;
+  -webkit-appearance: none;
 }
 
 .cart__submit:hover {
