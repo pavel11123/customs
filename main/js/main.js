@@ -10,7 +10,7 @@ function menu__close() {
 }
 
 const popup = () => {
-   const popupBtn = document.getElementById('popup')
+   const popupBtn = document.querySelectorAll('.btn')
    const popupModal = document.querySelector('.popup')
 
    const cartCloseBtn = popupModal.querySelector('.cart-close')
@@ -24,34 +24,29 @@ const popup = () => {
       popupModal.style.display = 'none'
       document.getElementById("phone__menu-id-body").style.overflow = "visible";
    }
-
-   popupBtn.addEventListener('click', openPopup)
+   for (var i = 0; i < popupBtn.length; i++) {
+      popupBtn[i].addEventListener('click', openPopup);
+   };
+   // popupBtn.addEventListener('click', openPopup)
    cartCloseBtn.addEventListener('click', closePopup)
 
 }
 
 popup()
 
-function loadMore(){
+function loadMore() {
    var btn = document.getElementById("btn-hidden");
    var spanH = document.getElementById("span-hidden");
    var elem = document.querySelector(".services__grid-hidden");
-   
-   if(spanH.style.display === "none"){
-      btn.innerHTML = "Показать все услуги";
-      spanH.style.display="inline";
-      elem.style.display="none";
 
-   }else{
+   if (spanH.style.display === "none") {
+      btn.innerHTML = "Показать все услуги";
+      spanH.style.display = "inline";
+      elem.style.display = "none";
+
+   } else {
       btn.innerHTML = "Показать меньше";
-      spanH.style.display="none";
-      elem.style.display="grid";
+      spanH.style.display = "none";
+      elem.style.display = "grid";
    }
 }
-
-// const loadMore = () => {
-
-
-// }
-
-// loadMore()
